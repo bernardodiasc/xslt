@@ -1,5 +1,7 @@
 # XSLT Demonstration
 
+Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/) (check the source code - its a xml, soon chrome will drop this feature)
+
 ## Templates
 
 Currently only have the `navigation` component, with 2 modes, called `simple` and `complex`.
@@ -12,10 +14,16 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
 
 - Match: `data/module[@name='navigation']`
 - Mode: simple 
+- Usage:
+
+```xml
+<xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="simple"/>`
+```
+
 - Sample XML:
 
 ```xml
-<module name="navigation">
+<module name="navigation" model="model-name">
   <nav>
     <h2>Navigation</h2>
     <ul>
@@ -41,10 +49,16 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
 
 - Match: `data/module[@name='navigation']`
 - Mode: complex
+- Usage:
+
+```xml
+<xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="complex"/>
+```
+
 - Sample XML:
 
 ```xml
-<module name="navigation">
+<module name="navigation" model="model-name">
   <heading>Navigation</heading>
   <list>
     <item data-title="Know more about us" data-url="#about-us">About us</item>
