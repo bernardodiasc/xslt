@@ -23,6 +23,7 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
 - Sample XML:
 
 ```xml
+<!-- Example of pure HTML data -->
 <module name="navigation" model="model-name">
   <nav>
     <h2>Navigation</h2>
@@ -58,6 +59,7 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
 - Sample XML:
 
 ```xml
+<!-- Example of structured content -->
 <module name="navigation" model="model-name">
   <heading>Navigation</heading>
   <list>
