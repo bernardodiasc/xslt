@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+
+<data>
+  <menu-de-navegacao>
+    <nav class="header">
+      <h2>Menu Header</h2>
+      <ul>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+      </ul>
+    </nav>
+    <nav class="footer">
+      <h2>Menu Footer</h2>
+      <ul>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+      </ul>
+    </nav>
+  </menu-de-navegacao>
+</data>
