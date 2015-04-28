@@ -2,26 +2,29 @@
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
 
 <data>
-  <menu-de-navegacao>
-    <nav class="header">
-      <h2>Menu Header</h2>
+  <!-- Example of pure HTML data -->
+  <module name="navigation" model="header">
+    <nav class="navigation header">
+      <h2>Header Menu</h2>
       <ul>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#equipe">Equipe</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#parceiros">Parceiros</a></li>
+        <li><a href="#about-us">About us</a> - Know more about us</li>
+        <li><a href="#team">Team</a> - The team</li>
+        <li><a href="#projects">Projects</a> - Projects we worked</li>
+        <li><a href="#contacts">Contacts</a> - Contact us</li>
+        <li><a href="#partners">Partners</a> - Meet our partners</li>
       </ul>
     </nav>
-    <nav class="footer">
-      <h2>Menu Footer</h2>
-      <ul>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#equipe">Equipe</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#parceiros">Parceiros</a></li>
-      </ul>
-    </nav>
-  </menu-de-navegacao>
+  </module>
+
+  <!-- Example of structured content -->
+  <module name="navigation" model="footer">
+    <heading>Footer Menu</heading>
+    <list>
+      <item data-title="Know more about us" data-url="#about-us">About us</item>
+      <item data-title="The team" data-url="#team">Team</item>
+      <item data-title="Projects we worked" data-url="#projects">Projects</item>
+      <item data-title="Contact us" data-url="#contacts">Contacts</item>
+      <item data-title="Meet our partners" data-url="#partners">Partners</item>
+    </list>
+  </module>
 </data>
