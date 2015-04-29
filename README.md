@@ -7,7 +7,9 @@
 
 ## Templates
 
-Currently only have the `navigation` component ([/templates/navigation/index.xsl](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl)), with 2 modes, called `simple` and `complex`.
+In this demonstration only have the `navigation` component ([/templates/navigation/index.xsl](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl)).
+
+There is 2 templates for the same matched data, one called `simple` and the other `complex`.
 
 ### Navigation mode simple
 
