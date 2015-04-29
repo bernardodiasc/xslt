@@ -1,17 +1,19 @@
 # XSLT Demonstration
 
-- Setup: don't need
+- Setup: don't need! just open the xml in your browser! :D
 - Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/)
 
 > Make sure to check the source code of the preview page - it's xml
 
 ## Templates
 
-Currently only have the [`navigation` component (/templates/navigation/index.xsl)](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl), with 2 modes, called `simple` and `complex`.
+Currently only have the `navigation` component ([/templates/navigation/index.xsl](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl)), with 2 modes, called `simple` and `complex`.
 
 ### Navigation mode simple
 
-The mode `simple` will print the matched xml nodes as it is. Since XHTML is XML, .
+The mode `simple` will print the matched xml nodes as it is.
+
+Since XHTML is XML, it's ok to have a bunch of html in a xml node.
 
 - Match: `data/module[@name='navigation']`
 - Mode: simple 
