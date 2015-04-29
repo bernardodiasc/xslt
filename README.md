@@ -11,9 +11,7 @@ Currently only have the `navigation` component ([/templates/navigation/index.xsl
 
 ### Navigation mode simple
 
-The mode `simple` will print the matched xml nodes as it is.
-
-Since XHTML is XML, it's ok to have a bunch of html in a xml node.
+The mode `simple` copy the matched xml nodes as html. This is ok since XHTML is XML.
 
 - Match: `data/module[@name='navigation']`
 - Mode: simple 
