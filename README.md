@@ -1,6 +1,9 @@
 # XSLT Demonstration
 
-Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/) (check the source code - its a xml, soon chrome will drop this feature)
+Setup: don't need
+Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/)
+
+> Make sure to check the source code of the preview page - it's xml
 
 ## Templates
 
@@ -8,7 +11,7 @@ Currently only have the [`navigation` component (/templates/navigation/index.xsl
 
 ### Navigation mode simple
 
-The mode `simple` will print the matched xml nodes as it is. Since HTML is compatible with XML.
+The mode `simple` will print the matched xml nodes as it is. Since XHTML is XML, .
 
 - Match: `data/module[@name='navigation']`
 - Mode: simple 
@@ -46,7 +49,9 @@ The mode `simple` will print the matched xml nodes as it is. Since HTML is compa
 
 ### Navigation mode complex
 
-The mode `complex` will iterate the matched xml nodes and will build the markup with an alternative markup structure.
+The mode `complex` iterate the matched xml nodes and build the markup with an alternative markup structure.
+
+In this case the markup resulted is intentionaly the same of simple mode markup. The structured data is parsed to build the html.
 
 - Match: `data/module[@name='navigation']`
 - Mode: complex
@@ -90,5 +95,3 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
   </xsl:for-each>
 </xsl:template>
 ```
-
-
