@@ -5,20 +5,24 @@
 <xsl:include href="styles.xsl"/>
 
 <!--
-Match: data/module[@name='navigation']
-Mode: simple (just print the xml node matched as it is)
-Usage: `<xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="simple"/>`
-Sample XML:
-```
-<module name="navigation">
-  <nav class="navigation header">
-    <h2>Header Menu</h2>
+# Navigation mode simple
+
+The mode `simple` copy the matched xml nodes as html. This is ok since XHTML is XML.
+
+- Match: `data/module[@name='navigation']`
+- Mode: simple 
+- Usage: <xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="simple"/>`
+- Sample XML:
+
+<module name="navigation" model="model-name">
+  <nav>
+    <h2>Navigation</h2>
     <ul>
-      <li><a href="#about-us">About us</a> - Know more about us</li>
-      <li><a href="#team">Team</a> - The team</li>
-      <li><a href="#projects">Projects</a> - Projects we worked</li>
-      <li><a href="#contacts">Contacts</a> - Contact us</li>
-      <li><a href="#partners">Partners</a> - Meet our partners</li>
+      <li><a href="#about-us">About us</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#partners">Partners</a></li>
     </ul>
   </nav>
 </module>
@@ -31,12 +35,18 @@ Sample XML:
 
 
 <!--
-Match: data/module[@name='navigation']
-Mode: complex (iterate xml nodes and build the markup)
-Usage: `<xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="complex"/>`
-Sample XML:
-```
-<module name="navigation">
+# Navigation mode complex
+
+The mode `complex` iterate the matched xml nodes and build the markup with an alternative markup structure.
+
+In this case the markup resulted is intentionaly the same of simple mode markup. The structured data is parsed to build the html.
+
+- Match: `data/module[@name='navigation']`
+- Mode: complex
+- Usage: <xsl:apply-templates select="/data/module[@name='navigation' and @model='model-name']" mode="complex"/>
+- Sample XML:
+
+<module name="navigation" model="model-name">
   <heading>Navigation</heading>
   <list>
     <item data-title="Know more about us" data-url="#about-us">About us</item>
@@ -46,7 +56,6 @@ Sample XML:
     <item data-title="Meet our partners" data-url="#partners">Partners</item>
   </list>
 </module>
-```
 -->
 <xsl:template match="data/module[@name='navigation']" mode="complex">
   <xsl:variable name="model" select="@model"/>
