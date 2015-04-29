@@ -7,9 +7,7 @@
 
 ## Templates
 
-In this demonstration only have the `navigation` component ([/templates/navigation/index.xsl](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl)).
-
-There is 2 templates for the same matched data, one called `simple` and the other `complex`.
+In this demonstration only have the `navigation` component ([/templates/navigation/index.xsl](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl)). There is 2 templates for the same matched data, one called `simple` and the other `complex`. The `model-name` is used here to represent a data source.
 
 ### Navigation mode simple
 
