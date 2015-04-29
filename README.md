@@ -4,13 +4,11 @@ Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/x
 
 ## Templates
 
-Currently only have the `navigation` component, with 2 modes, called `simple` and `complex`.
-
-The mode `simple` will print the matched xml nodes as it is. Since HTML is compatible with XML.
-
-The mode `complex` will iterate the matched xml nodes and will build the markup with an alternative markup structure.
+Currently only have the [`navigation` component (/templates/navigation/index.xsl)](https://github.com/bernardodiasc/xslt/blob/gh-pages/templates/navigation/index.xsl), with 2 modes, called `simple` and `complex`.
 
 ### Navigation mode simple
+
+The mode `simple` will print the matched xml nodes as it is. Since HTML is compatible with XML.
 
 - Match: `data/module[@name='navigation']`
 - Mode: simple 
@@ -47,6 +45,8 @@ The mode `complex` will iterate the matched xml nodes and will build the markup 
 ```
 
 ### Navigation mode complex
+
+The mode `complex` will iterate the matched xml nodes and will build the markup with an alternative markup structure.
 
 - Match: `data/module[@name='navigation']`
 - Mode: complex
