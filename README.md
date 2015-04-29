@@ -3,7 +3,7 @@
 - Setup: don't need! just open the xml in your browser! :D
 - Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/)
 
-> Make sure to check the source code of the preview page - it's xml
+> Make sure to check the source code of the preview page - it's **XML**
 
 ## Templates
 
