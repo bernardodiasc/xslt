@@ -1,7 +1,7 @@
 # XSLT Demonstration
 
-Setup: don't need
-Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/)
+- Setup: don't need
+- Preview: [http://bernardodiasc.github.io/xslt/](http://bernardodiasc.github.io/xslt/)
 
 > Make sure to check the source code of the preview page - it's xml
 
