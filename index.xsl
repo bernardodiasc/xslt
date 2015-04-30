@@ -3,25 +3,22 @@
   
   <xsl:output method="html"/>
 
-  <xsl:include href="templates/navigation/index.xsl"/>
+  <xsl:include href="templates/html-manipulation.xsl"/>
+  <xsl:include href="components/navigation/index.xsl"/>
 
   <xsl:template match="/">
   <html lang="en">
     <head>
       <meta charset="UTF-8"/>
       <title>Avante | Estúdio de Tecnologia</title>
-      <style>
-        <xsl:call-template name="navigation-styles"/>
-      </style>
+      <xsl:call-template name="add-to-head"/>
     </head>
     <body>
       <xsl:apply-templates select="/data/module[@name='navigation' and @model='header']" mode="simple"/>
       <hr/>
       <xsl:apply-templates select="/data/module[@name='navigation' and @model='footer']" mode="complex"/>
 
-      <script>
-        <xsl:call-template name="navigation-scripts"/>
-      </script>
+      <xsl:call-template name="add-to-body"/>
     </body>
   </html>
   </xsl:template>

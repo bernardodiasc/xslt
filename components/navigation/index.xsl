@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:include href="scripts.xsl"/>
-<xsl:include href="styles.xsl"/>
-
 <!--
 # Navigation mode simple
 
@@ -29,7 +26,7 @@ The mode `simple` copy the matched xml nodes as html. This is ok since XHTML is 
 ```
 -->
 <xsl:template match="data/module[@name='navigation']" mode="simple">
-  <xsl:copy-of select="current()/*"/>
+  <xsl:apply-templates select="current()/*" mode="html"/>
 </xsl:template>
 
 
@@ -72,5 +69,12 @@ In this case the markup resulted is intentionaly the same of simple mode markup.
   </xsl:for-each>
 </xsl:template>
 
+<xsl:template name="add-to-head">
+  <link rel="stylesheet" href="components/navigation/styles.css"/>
+</xsl:template>
+
+<xsl:template name="add-to-body">
+  <script src="components/navigation/scripts.js"></script>
+</xsl:template>
 
 </xsl:stylesheet>
